@@ -75,11 +75,8 @@ export default function About() {
             className="lg:col-span-3"
           >
             <h3 className="text-2xl sm:text-3xl font-heading font-bold text-green-deep mb-2">
-              Kasun
+              Kasun Liyanage
             </h3>
-            <p className="text-gold-accent font-body font-semibold text-sm mb-6 tracking-wide">
-              SLTDA Certified Professional Tour Guide
-            </p>
             <div className="space-y-4 text-charcoal-light font-body leading-relaxed">
               <p>
                 Hello! I am Kasun, a passionate and professional tour guide with over a decade of experience crafting memorable journeys across Sri Lanka. Specializing in one-day and two-day trips, I have turned my love for travel into a dedicated, personalized tour service.

@@ -69,14 +69,14 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.9 }}
-            className="flex flex-col sm:flex-row items-start gap-3 sm:gap-4"
+            className="absolute bottom-10 left-6 sm:relative sm:bottom-auto sm:left-auto flex flex-col sm:flex-row items-start gap-3 sm:gap-4 sm:mt-2 z-20"
           >
             <a
               href="https://www.tripadvisor.com"
               target="_blank"
               rel="noopener noreferrer"
               id="hero-cta-tripadvisor"
-              className="group inline-flex items-center justify-center gap-2 sm:gap-3 px-5 py-2.5 sm:px-8 sm:py-4 bg-gold-accent text-green-deep font-body font-bold text-xs sm:text-base rounded-full hover:bg-gold-light transition-all duration-300 shadow-gold hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]"
+              className="group flex sm:inline-flex items-center justify-center gap-2 sm:gap-3 px-5 py-3 sm:px-8 sm:py-4 bg-gold-accent text-green-deep font-body font-bold text-xs sm:text-base rounded-full hover:bg-gold-light transition-all duration-300 shadow-gold hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] w-[220px] sm:w-auto"
             >
               <svg className="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="currentColor">
                 <circle cx="6.5" cy="13.5" r="2.5" />
@@ -89,7 +89,7 @@ export default function Hero() {
             <Link
               href="/#tours"
               id="hero-cta-explore"
-              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 sm:px-8 sm:py-4 border border-beige-sand/30 text-beige-sand font-body font-medium text-xs sm:text-base rounded-full hover:bg-beige-sand/10 hover:border-beige-sand/50 transition-all duration-300"
+              className="flex sm:inline-flex items-center justify-center gap-2 px-5 py-3 sm:px-8 sm:py-4 border border-beige-sand/30 bg-black/20 sm:bg-transparent backdrop-blur-sm sm:backdrop-blur-none text-beige-sand font-body font-medium text-xs sm:text-base rounded-full hover:bg-beige-sand/10 hover:border-beige-sand/50 transition-all duration-300 w-[220px] sm:w-auto"
             >
               Explore Tours
             </Link>
