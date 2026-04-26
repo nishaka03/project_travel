@@ -69,7 +69,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.9 }}
-            className="absolute bottom-20 left-6 sm:relative sm:bottom-auto sm:left-auto flex flex-col sm:flex-row items-start gap-3 sm:gap-4 sm:mt-2 z-20"
+            className="absolute bottom-14 left-6 sm:relative sm:bottom-auto sm:left-auto flex flex-col sm:flex-row items-start gap-3 sm:gap-4 sm:mt-2 z-20"
           >
             <a
               href="https://www.tripadvisor.com"
