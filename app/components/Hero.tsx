@@ -35,9 +35,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="mb-6"
+            className="mb-4 sm:mb-6"
           >
-            <span className="inline-block px-4 py-1.5 text-xs font-body font-semibold tracking-[0.25em] uppercase text-gold-accent border border-gold-accent/30 rounded-full bg-gold-accent/10">
+            <span className="inline-block px-3 py-1.5 sm:px-4 text-[10px] sm:text-xs font-body font-semibold tracking-[0.2em] sm:tracking-[0.25em] uppercase text-gold-accent border border-gold-accent/30 rounded-full bg-gold-accent/10">
               Curated Experiences Since 2012
             </span>
           </motion.div>
@@ -47,7 +47,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-heading font-bold text-beige-sand leading-[1.1] mb-6 drop-shadow-2xl"
+            className="text-4xl sm:text-6xl lg:text-7xl font-heading font-bold text-beige-sand leading-[1.15] sm:leading-[1.1] mb-4 sm:mb-6 drop-shadow-2xl"
           >
             Discover the
             <span className="block text-gold-accent italic drop-shadow-md">Soul of Sri Lanka</span>
@@ -58,7 +58,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.7 }}
-            className="text-lg sm:text-xl text-white font-body font-medium leading-relaxed mb-10 max-w-lg drop-shadow-md"
+            className="text-base sm:text-xl text-white font-body font-medium leading-relaxed mb-8 sm:mb-10 max-w-lg drop-shadow-md"
           >
             Immerse yourself in ancient temples, misty tea plantations, and
             untamed wildlife with a guide who calls this paradise home.
@@ -69,16 +69,16 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.9 }}
-            className="flex flex-col sm:flex-row gap-4"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4"
           >
             <a
               href="https://www.tripadvisor.com"
               target="_blank"
               rel="noopener noreferrer"
               id="hero-cta-tripadvisor"
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-gold-accent text-green-deep font-body font-bold text-base rounded-full hover:bg-gold-light transition-all duration-300 shadow-gold hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]"
+              className="group inline-flex items-center justify-center gap-2 sm:gap-3 px-6 py-3 sm:px-8 sm:py-4 bg-gold-accent text-green-deep font-body font-bold text-sm sm:text-base rounded-full hover:bg-gold-light transition-all duration-300 shadow-gold hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]"
             >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" viewBox="0 0 24 24" fill="currentColor">
                 <circle cx="6.5" cy="13.5" r="2.5" />
                 <circle cx="17.5" cy="13.5" r="2.5" />
                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" opacity="0.3" />
@@ -89,7 +89,7 @@ export default function Hero() {
             <Link
               href="/#tours"
               id="hero-cta-explore"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-beige-sand/30 text-beige-sand font-body font-medium text-base rounded-full hover:bg-beige-sand/10 hover:border-beige-sand/50 transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 sm:px-8 sm:py-4 border border-beige-sand/30 text-beige-sand font-body font-medium text-sm sm:text-base rounded-full hover:bg-beige-sand/10 hover:border-beige-sand/50 transition-all duration-300"
             >
               Explore Tours
             </Link>
