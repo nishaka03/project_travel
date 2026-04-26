@@ -13,7 +13,7 @@ export default function Hero() {
           src="/images/elle 2.jpeg"
           alt="Ella - Sri Lanka"
           fill
-          className="object-cover"
+          className="object-cover object-[75%_center] md:object-center"
           priority
           sizes="100vw"
         />

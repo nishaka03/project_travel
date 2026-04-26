@@ -1,7 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import WhatsAppCTA from "./components/WhatsAppCTA";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "Bentota Holiday Tours — Premium Sri Lanka Tour Guide | Culture, Wildlife & Adventure",
