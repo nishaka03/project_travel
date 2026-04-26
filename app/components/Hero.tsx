@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="absolute bottom-32 left-10 w-48 h-48 rounded-full bg-green-leaf/10 blur-2xl animate-float" style={{ animationDelay: '2s' }} />
 
       {/* Content */}
-      <div className="relative h-full max-w-7xl mx-auto px-6 lg:px-8 flex flex-col justify-start pt-32 sm:justify-center sm:pt-0">
+      <div className="relative h-full max-w-7xl mx-auto px-6 lg:px-8 flex flex-col justify-start pt-28 sm:justify-center sm:pt-0">
         <div className="max-w-2xl">
           {/* Tagline */}
           <motion.div
@@ -69,7 +69,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.9 }}
-            className="absolute bottom-14 left-6 sm:relative sm:bottom-auto sm:left-auto flex flex-col sm:flex-row items-start gap-3 sm:gap-4 sm:mt-2 z-20"
+            className="absolute bottom-12 left-6 sm:relative sm:bottom-auto sm:left-auto flex flex-col sm:flex-row items-start gap-3 sm:gap-4 sm:mt-2 z-20"
           >
             <a
               href="https://www.tripadvisor.com"
