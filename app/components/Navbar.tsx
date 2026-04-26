@@ -49,7 +49,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
+          <Link href="/#home" className="flex items-center gap-3 group">
 
             <div>
               <span className="text-lg font-heading font-bold text-beige-sand tracking-wide">
@@ -59,26 +59,26 @@ export default function Navbar() {
                 Sri Lanka Tours
               </span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                href={link.href.startsWith('#') ? `/${link.href}` : link.href}
                 className="text-sm font-body font-medium text-beige-sand/80 hover:text-gold-accent transition-colors duration-300 relative group"
               >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-gold-accent group-hover:w-full transition-all duration-300" />
-              </a>
+              </Link>
             ))}
-            <a
+            <Link
               href="/#booking"
-              className="ml-2 px-5 py-2.5 bg-gold-accent text-green-deep text-sm font-semibold font-body rounded-full hover:bg-gold-light transition-all duration-300 shadow-gold hover:shadow-lg"
+              className="ml-2 px-5 py-2.5 bg-gold-accent text-green-deep text-sm font-semibold font-body rounded-full hover:bg-gold-light transition-all duration-300 shadow-gold hover:shadow-lg inline-block"
             >
               Book Now
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Hamburger Button */}
@@ -134,28 +134,35 @@ export default function Navbar() {
               className="relative h-full flex flex-col items-center justify-center gap-8"
             >
               {navLinks.map((link, i) => (
-                <motion.a
+                <motion.div
                   key={link.name}
-                  href={link.href}
-                  onClick={handleLinkClick}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.15 + i * 0.08 }}
-                  className="text-3xl font-heading font-semibold text-beige-sand hover:text-gold-accent transition-colors"
                 >
-                  {link.name}
-                </motion.a>
+                  <Link
+                    href={link.href.startsWith('#') ? `/${link.href}` : link.href}
+                    onClick={handleLinkClick}
+                    className="text-3xl font-heading font-semibold text-beige-sand hover:text-gold-accent transition-colors block"
+                  >
+                    {link.name}
+                  </Link>
+                </motion.div>
               ))}
-              <motion.a
-                href="/#booking"
-                onClick={handleLinkClick}
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
-                className="mt-4 px-8 py-3 bg-gold-accent text-green-deep text-lg font-semibold font-body rounded-full hover:bg-gold-light transition-all duration-300 shadow-gold"
+                className="mt-4"
               >
-                Book Now
-              </motion.a>
+                <Link
+                  href="/#booking"
+                  onClick={handleLinkClick}
+                  className="px-8 py-3 bg-gold-accent text-green-deep text-lg font-semibold font-body rounded-full hover:bg-gold-light transition-all duration-300 shadow-gold inline-block"
+                >
+                  Book Now
+                </Link>
+              </motion.div>
             </motion.div>
           </motion.div>
         )}

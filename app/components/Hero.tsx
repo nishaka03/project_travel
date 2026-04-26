@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -85,13 +86,13 @@ export default function Hero() {
               Book on TripAdvisor
               <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
             </a>
-            <a
-              href="#tours"
+            <Link
+              href="/#tours"
               id="hero-cta-explore"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-beige-sand/30 text-beige-sand font-body font-medium text-base rounded-full hover:bg-beige-sand/10 hover:border-beige-sand/50 transition-all duration-300"
             >
               Explore Tours
-            </a>
+            </Link>
           </motion.div>
         </div>
 

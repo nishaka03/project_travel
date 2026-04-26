@@ -33,7 +33,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {['Home', 'Tours', 'Reviews', 'About'].map((link) => (
                 <li key={link}>
-                  <a href={`#${link.toLowerCase()}`} className="text-sm text-beige-sand/60 hover:text-gold-accent transition-colors font-body">{link}</a>
+                  <Link href={`/#${link.toLowerCase()}`} className="text-sm text-beige-sand/60 hover:text-gold-accent transition-colors font-body">{link}</Link>
                 </li>
               ))}
             </ul>
